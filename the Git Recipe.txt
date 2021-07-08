@@ -1,0 +1,24 @@
+Everytime you come to the classroom this will be your routine:
+
+========= COMMANDS TO SET THE CREDENTIALS AND REPOSITORY========
+git config --global user.name "minji99710"  (This command sets your username)
+git config --global user.email "alswl99710@gmail.com"   (This command sets your email)
+git remote set-url origin <repository_url_here>  (This command sets the repository that we will push to)
+=========================================================
+
+========= COMMANDS TO CHECK THAT YOUR CONFIG IS SET WELL ========
+git config --get user.name  (This command will show the current global username)
+git config --get user.email  (This command will show the current global email)
+git config --get remote.origin.url (This command will show the url of the repository set in origin)
+=========================================================
+
+
+These commands will config your credentials and make sure we can push to the repository.
+
+Then these commands for when we make changes to the folder files:
+
+========== COMMANDS FOR ADDING NEW CHANGES AND PUSHING THEM ======
+git status (This command checks if any files were added, modified or deleted)
+git add . (This command adds all additions, changes or deletions in every folder showing in git status to the next push)
+git commit -m "Commit message goes here, what changed?"  (This command prepares the push with a comment)
+git push origin main (This command pushes the changes to the repository)
